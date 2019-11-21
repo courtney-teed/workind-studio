@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>WORKIND | San Diego based interior architecture studio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <meta name="description" content="Strategy-led design - Graciously crafted interiors - Fostering culture defining experiences." />
+
+		<meta name="keywords" content="hospitality design, restaurant design san diego, interior design, interior designer, interior architect, interior architecture, design firm, hospitality design firm, brewery design san diego, architectural designer, megan power, megan power designer, workkind studio, workind studios" />
+
+		<link rel="stylesheet" href="css/normalize.css">
+	  <link rel="stylesheet" href="css/skeleton.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+		<link type="text/css" rel="stylesheet" href="css/styles.css" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<script src="js/main.js"></script>
+
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv-printshiv.min.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body class="wrapper fade-in">
+		<div class="container">
+
+			<div id="wrapper" data-slides='["img/desktop-background.jpg","img/desktop-background2.jpg","img/desktop-background3.jpg","img/desktop-background4.jpg"]'>
+
+				<div id="dark-wrapper">
+					<div id="dark-background">
+						<header>
+							<div id="rotate">
+								<a href="mailto:info@workindstudio.com" target="_blank">Contact</a>
+							</div>
+							<h1>Workind Studio | San Diego based Interior Architecture Studio</h1>
+							<img src="img/logo-white.png" alt="Workind Studio logo" title="Workind Studio logo" class="logo" />
+							<h2>works in&nbsp;<span class="caps">interiors + design</span></h2>
+						</header>
+						<main>
+
+							<p class="p-top">Strategy-led design.&nbsp;&nbsp;Graciously crafted interiors.<br />Fostering culture defining experiences.</p>
+
+							<div class="email-btn">
+									<span class="btn btn-default">
+										<span class="button-label">
+											<a href="mailto:info@workindstudio.com" target="_blank">info@workindstudio.com</a>
+										</span>
+										<span class="mask"></span>
+									</span>
+							</div>
+
+							<p class="p-bottom"><span class="hide">We are currently working on our new website, </span><span class="show">website </span>launching Summer 2019<span class="hide">.</span></p>
+
+							<div class="mobile-footer">
+									<a href="https://www.facebook.com/pg/workindstudio" target="_blank"><img src="img/facebook.png" alt="Workind Studio Facebook" title="Workind Studio Facebook" /></a>
+									<a href="https://www.twitter.com/workindstudio/" target="_blank"><img src="img/twitter.png" alt="Workind Studio Twitter" title="Workind Studio Twitter" /></a>
+									<a href="https://www.instagram.com/workindstudio/" target="_blank"><img src="img/instagram.png" alt="Workind Studio Instagram" title="Workind Studio Instagram" /></a>
+									<a href="https://www.linkedin.com/company/workindstudio/" target="_blank"><img src="img/linkedin.png" alt="Workind Studio LinkedIn" title="Workind Studio LinkedIn" /></a>
+								<p>&copy; 2019 Workind Studio</p>
+							</div>
+							<div id="mobile-images">
+								<img src="img/desktop-background.jpg" />
+								<img src="img/desktop-background2.jpg" />
+								<img src="img/desktop-background3.jpg" />
+								<img src="img/desktop-background4.jpg" />
+							</div>
+						</main>
+						<footer>
+							<div>
+								<a href="https://www.facebook.com/pg/workindstudio" target="_blank"><img src="img/facebook.png" alt="Workind Studio Facebook" title="Workind Studio Facebook" /></a>
+								<a href="https://www.twitter.com/workindstudio/" target="_blank"><img src="img/twitter.png" alt="Workind Studio Twitter" title="Workind Studio Twitter" /></a>
+								<a href="https://www.instagram.com/workindstudio/" target="_blank"><img src="img/instagram.png" alt="Workind Studio Instagram" title="Workind Studio Instagram" /></a>
+								<a href="https://www.linkedin.com/company/workindstudio/" target="_blank"><img src="img/linkedin.png" alt="Workind Studio LinkedIn" title="Workind Studio LinkedIn" /></a>
+							</div>
+							<p class="copyright">&copy; 2019 Workind Studio</p>
+						</footer>
+					</div><!--ends dark-background-->
+				</div><!--ends dark-wrapper-->
+			</div><!--ends wrapper-->
+		</div><!--ends container-->
+
+		<!--desktop slideshow script-->
+		<script class="slideshow">
+					if ($(window).width() >= 1025) {
+						! function ($) {
+				    "use strict";
+				    var slide = $("[data-slides]"),
+				        count = 0,
+				        slides = slide.data("slides"),
+				        len = slides.length,
+				        n = function () {
+				            if (count >= len) {
+				                count = 0
+				            }
+				            slide.css("background-image", 'url("' + slides[count] + '")').show(0, function () {
+				                setTimeout(n, 3000)
+				            });
+				            count++;
+				        };
+				    n()
+				}(jQuery);
+				}
+		</script>
+
+	</body>
+</html>
